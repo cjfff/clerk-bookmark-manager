@@ -6,3 +6,4 @@
 5. [Supabase with prisma](https://supabase.com/docs/guides/database/prisma)
 6. [Clerk nextjs](https://clerk.com/docs/components/overview)
 7. [nextjs with prisma guide](https://vercel.com/guides/nextjs-prisma-postgres)
+8. [deploy to Vercel](https://clerk.com/docs/deployments/deploy-to-vercel)
