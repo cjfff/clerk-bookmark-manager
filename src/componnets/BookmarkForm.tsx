@@ -1,9 +1,8 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useState } from "react";
 import { BookmarkInsert } from "@/types/bookmark";
 import { useRouter } from "next/navigation";
-import { createBookmark } from "@/lib/actions";
 
 interface BookmarkFormProps {
     onSubmit: (data: BookmarkInsert) => void;

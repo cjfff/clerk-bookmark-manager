@@ -8,6 +8,6 @@ export type Bookmark = {
   userId: string
 }
 
-export interface BookmarkInsert extends Omit<Bookmark, 'id' | 'createdAt' | 'updatedAt' | 'userId'> {}
+export type BookmarkInsert = Omit<Bookmark, 'id' | 'createdAt' | 'updatedAt' | 'userId'>
 
 

@@ -7,7 +7,6 @@ import { BookmarkInsert } from "@/types/bookmark";
 import styles from "./page.module.css";
 import BookmarkForm from "@/componnets/BookmarkForm";
 import BookmarkList from "@/componnets/BookmarkList";
-import AddBookmarkButton from "@/componnets/AddBookmarkButton";
 
 export default function Home() {
   const { bookmarks, loading, error, addBookmark, deleteBookmark, refetch } =

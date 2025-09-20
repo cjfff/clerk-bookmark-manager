@@ -1,11 +1,10 @@
 import { NextRequest, NextResponse } from "next/server"
 import { auth } from "@clerk/nextjs/server"
-import * as z from "zod"
 import { deleteBookmark } from "@/lib/bookmark-utils"
 
 
-export async function DELETE(request: NextRequest, { params }: { params: { id: string } }) {
-    const { id } = params
+export async function DELETE(request: NextRequest, { params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params
     const { userId } = await auth()
 
     if (!userId) {
