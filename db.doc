@@ -1,0 +1,13 @@
+1. initiate the database first migration file
+npx prisma migrate dev --name init
+npx prisma migrate dev
+
+
+2. view the database in the local
+npx prisma studio
+
+datasource db {
+  provider = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
