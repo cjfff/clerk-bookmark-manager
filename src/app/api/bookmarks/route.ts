@@ -46,6 +46,7 @@ export async function GET(request: NextRequest) {
         return NextResponse.json(bookmarks)
 
     } catch (error) {
+        console.log(error)
         return NextResponse.json({ error: "Failed to get bookmarks" }, { status: 500 })
     }
 }
